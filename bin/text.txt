@@ -1,0 +1,8 @@
+A function named initialize that takes in a connection string as a parameter.
+Save this to a global variable so that later function calls can connect to the designated postgres database.
+A function named getAll that takes the name of a table as a parameter, as well as a 'callback' parameter.
+The function should connect to the postgres database and get the contents of that table in an array.
+Invoke the callback with the table contents.
+A function named findById that behaves similarly to getAll above, except that it additionally accepts an 'id' parameter.
+It should retrieve the row specified by the id and send it to the callback.
+Next, test the ORM middleware you created by doing the following:
